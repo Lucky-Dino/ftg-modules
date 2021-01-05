@@ -1,3 +1,4 @@
+import asyncio
 import logging
 import io
 from .. import loader, utils
@@ -7,7 +8,7 @@ logger = logging.getLogger(__name__)
 
 @loader.tds
 class SavedMod(loader.Module):
-	"""Сохранятель в избранное"""
+	"""Созранятель в избранное"""
 	strings = {"name": "SavedMessages"}
 
 	
